@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My web page</title>
     <link rel="stylesheet" href="css/assignment.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header>
-      <p>My Web Page</p>
+      <p id="logo">My Web Page</p>
       <nav>
         <ul>
           <a href="#"><li>Home</li></a>
@@ -18,10 +25,23 @@
       </nav>
     </header>
     <main>
-      <img src="/img/assignment-img.jpg" alt="picture of background" />
-      <h1>Welcome to My Web Page</h1>
-      <p>xxxxxxxxxxxxxxxx</p>
+      <img
+        class="assignment-img"
+        src="assignment-img.jpeg"
+        alt="picture of background"
+      />
+      <h1 class="welcome">Welcome to My Web Page</h1>
     </main>
-    <footer><p></p></footer>
+
+    <footer>
+      <div class="white-block">
+        <div class="introduction-text">
+          <p>
+            Feel free to explore my projects, and I look forward to connecting
+            and collaborating with like-minded individuals!
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
