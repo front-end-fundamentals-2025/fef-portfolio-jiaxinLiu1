@@ -52,3 +52,9 @@ a {
 .middle-block .sweden-text {
   font-size: 28px;
 }
+
+.page2-img {
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
