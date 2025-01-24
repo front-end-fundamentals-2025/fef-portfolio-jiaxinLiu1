@@ -1,6 +1,28 @@
 * {
   font-family: "Alike Angular", serif;
 }
+/*Home Page*/
+
+/*header*/
+header {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-left: 3rem;
+}
+
+#logo {
+  font-weight: 800;
+  font-size: 2rem;
+}
 
 /* background */
 .assignment-img {
@@ -9,21 +31,24 @@
   opacity: 0.9;
 }
 
-/*block*/
-
-.white-block {
+/*Project Page*/
+.project-img {
   width: 100%;
-  height: 100px;
 }
 
-.welcome-text {
-  background-color: rgba(255, 228, 196, 0.606);
-  text-align: left;
-  font-size: 25px;
-  font-weight: bold;
-  line-height: 120px;
+figure {
+  margin-left: 0;
+  grid-area: img;
 }
 
+.project-container {
+  display: grid;
+  grid-template-areas:
+    "img img img"
+    "img img img";
+}
+
+/*Connect Page*/
 .middle-block {
   position: absolute;
   top: 25%;
@@ -63,13 +88,4 @@
 
 .contact-text {
   font-size: 15px;
-}
-
-/*project*/
-.project-img {
-  width: 30%;
-}
-
-figure {
-  margin-left: 0;
 }
