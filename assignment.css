@@ -64,3 +64,8 @@
 .contact-text {
   font-size: 15px;
 }
+
+/*project*/
+.project-img {
+  width: 30%;
+}
