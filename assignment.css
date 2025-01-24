@@ -69,3 +69,7 @@
 .project-img {
   width: 30%;
 }
+
+figure {
+  margin-left: 0;
+}
