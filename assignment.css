@@ -24,31 +24,6 @@ li {
   font-size: 2rem;
 }
 
-/* background */
-.assignment-img {
-  width: 100%;
-  height: auto;
-  opacity: 0.9;
-}
-
-/*Project Page*/
-.project-img {
-  width: 100%;
-}
-
-figure {
-  margin-left: 0;
-  grid-area: img;
-}
-
-.project-container {
-  display: grid;
-  grid-template-areas:
-    "img img img"
-    "img img img";
-}
-
-/*Connect Page*/
 .middle-block {
   position: absolute;
   top: 25%;
@@ -61,18 +36,21 @@ figure {
   line-height: 60px;
 }
 
-.middle-block .name-text {
-  font-size: 40px;
-}
-.middle-block .sweden-text {
-  font-size: 28px;
+/*Project Page*/
+.project-img {
+  width: 100%;
+
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
 }
 
-.page2-img {
-  width: 100%;
-  height: auto;
-  opacity: 0.9;
+figure {
+  margin-left: 0;
 }
+
+/*Connect Page*/
+
 .middle-block2 {
   position: absolute;
   top: 25%;
@@ -88,4 +66,64 @@ figure {
 
 .contact-text {
   font-size: 15px;
+}
+/*Project-detail Page*/
+.project-detail {
+  display: flex;
+  align-items: center;
+}
+
+.left-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-section h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.right-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 10px;
+}
+/* responsive for nav*/
+@media screen and (max-width: 500px) {
+  header,
+  ul {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  ul {
+    margin-top: 0;
+  }
+
+  li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+/*responsive for project*/
+@media screen and (min-width: 520px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
