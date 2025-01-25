@@ -24,16 +24,11 @@ li {
   font-size: 2rem;
 }
 
-.middle-block {
-  position: absolute;
-  top: 25%;
-  left: 35%;
-  width: 30%;
-  height: 600px;
+.introduction {
   text-align: center;
   font-size: larger;
-  background-color: rgba(225, 220, 215, 0.523);
   line-height: 60px;
+  padding-top: 100px;
 }
 
 /*Project Page*/
@@ -95,6 +90,7 @@ figure {
   line-height: 1.5;
   margin: 10px;
 }
+
 /* responsive for nav*/
 @media screen and (max-width: 500px) {
   header,
@@ -125,5 +121,32 @@ figure {
   .project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*responsive for project detail*/
+@media screen and (max-width: 770px) {
+  .right-section h1 {
+    font-size: 1.5rem;
+  }
+  .right-section p {
+    font-size: 0.9rem;
+  }
+}
+/*responsive for connect page*/
+@media screen and (max-width: 770px) {
+  .middle-block2 {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .contact-text {
+    font-size: 0.8rem;
+  }
+}
+/*responsive for home page*/
+@media screen and (max-width: 770px) {
+  .middle-block {
+    padding: 1rem;
+    font-size: 1rem;
   }
 }
