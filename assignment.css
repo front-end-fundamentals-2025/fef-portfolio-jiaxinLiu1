@@ -7,16 +7,53 @@
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
 ul {
   display: flex;
   list-style: none;
+  gap: 1.5rem;
   padding-left: 0;
 }
 
 li {
   margin-left: 3rem;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: rgb(243, 197, 205);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  animation-duration: 1s;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: beige;
+  transform: scale(1.1);
+}
+@keyframes change-color {
+  0% {
+    background-color: rgb(243, 197, 205);
+    transform: scale(1);
+  }
+
+  100% {
+    background-color: beige;
+    transform: scale(1.1);
+  }
 }
 
 #logo {
@@ -34,7 +71,6 @@ li {
 /*Project Page*/
 .project-img {
   width: 100%;
-
   object-fit: cover;
   display: block;
   border-radius: 6px;
