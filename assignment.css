@@ -63,8 +63,9 @@ nav a:hover {
 
 .introduction {
   text-align: center;
-  font-size: larger;
-  line-height: 60px;
+  font-size: 30px;
+  line-height: 50px;
+  margin-bottom: 10%;
   padding-top: 100px;
 }
 
@@ -126,7 +127,7 @@ form button {
   width: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: justify;
 }
 .right-section {
   display: flex;
