@@ -26,9 +26,8 @@ li {
 }
 
 nav a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  line-height: normal;
   text-decoration: none;
   background-color: rgb(243, 197, 205);
   font-size: 1.2rem;
@@ -125,9 +124,7 @@ form button {
 
 .left-section {
   width: 50%;
-  display: flex;
   justify-content: center;
-  align-items: justify;
 }
 .right-section {
   display: flex;
