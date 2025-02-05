@@ -35,7 +35,6 @@ nav a {
   padding: 10px;
   border-radius: 5px;
   color: white;
-  animation-duration: 1s;
   transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
