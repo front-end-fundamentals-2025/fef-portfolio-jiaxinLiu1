@@ -95,22 +95,36 @@ nav a:hover {
   }
 }
 
-.introduction {
-  text-align: center;
-  font-size: 30px;
-  line-height: 50px;
-  margin-bottom: 10%;
-  padding-top: 100px;
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 600px;
+  height: auto;
+  margin: 100px auto;
+  color: rgba(75, 54, 33, 0.457);
 }
 
+.content-box,
 .change-background-container {
-  background-color: rgba(245, 245, 220, 0.58);
+  background-color: rgba(245, 245, 220, 0.373);
   width: 250px;
-  padding: 20px;
+  height: 300px;
+  padding: 30px;
+  text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
+
+.portrait-image {
+  width: 100%;
+}
+
 .change-background-text {
   display: flex;
   flex-direction: column;
@@ -139,6 +153,20 @@ nav a:hover {
   color: rgba(75, 54, 33, 0.457);
 }
 
+@media (max-width: 700px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    width: 90%;
+  }
+
+  .content-box,
+  .change-background-container {
+    max-width: 100%;
+    height: auto;
+  }
+}
 /*Project Page*/
 .project-img {
   width: 100%;
